@@ -363,7 +363,7 @@ body:not(.page-view) #chuyen-muc~section:not(.home-featured-section){display:non
 /* ---------- Lab ---------- */
 .lab-layout{display:grid;gap:50px}
 @media(min-width:1024px){.lab-layout{grid-template-columns:1fr 340px;gap:60px;align-items:start}.sidebar{position:sticky;top:calc(var(--header-h) + 24px)}}
-.lab-list{display:grid;gap:0;border-top:2px solid var(--wine)}
+.lab-list{display:grid;gap:0;border-top:2px solid var(--wine);padding:0 26px;background:#fff9ea;border-radius:var(--r-lg);overflow:hidden}
 .lab-item{display:grid;grid-template-columns:1fr;gap:16px;padding:26px 0;border-bottom:1px solid rgba(91,0,21,.2);position:relative;transition:padding .4s var(--ease),background .3s}
 .lab-item:hover{padding-inline:16px;background:rgba(128,174,232,.16)}
 .lab-item .thumb{border-radius:var(--r-md);aspect-ratio:16/10}
@@ -374,6 +374,7 @@ body:not(.page-view) #chuyen-muc~section:not(.home-featured-section){display:non
 .lab-item:first-child{grid-template-columns:1fr}
 .lab-item:first-child .thumb{aspect-ratio:2/1}
 .lab-item:first-child h3{font-size:clamp(1.7rem,3vw,2.3rem)}
+.lab-item:last-child{border-bottom:0}
 .side-box{padding:26px;border-radius:var(--r-lg);background:#fff9ea;margin-bottom:22px}
 #nhat-ky-xuong-lo .side-box{color:var(--wine)}
 #nhat-ky-xuong-lo .side-box .tag:not([aria-pressed=true]),#nhat-ky-xuong-lo .side-box .rel li a{color:var(--wine)}
